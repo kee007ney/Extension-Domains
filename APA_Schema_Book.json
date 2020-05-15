@@ -1,0 +1,75 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "array",
+	"title": "Journal Reference",
+	"description": "This represents the list of journal articles cited.",
+	"items": {
+		"required": [
+			"book-authors",
+			"book-title",
+			"citation-pages",
+			"city",
+			"publisher",
+			"year"
+		],
+		"additionalProperties": false,
+		"properties": {
+			"book-authors": {
+				"type": "string",
+				"title": "book-authors",
+				"description": "Authors of the book, in order of appearance, written as <first name><space><middle name(s)><space><last name><comma>",
+				"examples": [
+					"Charles Darwin, J. F. Duthie, William Hopkins"
+				]
+			},
+			"book-title": {
+				"type": "string",
+				"title": "book-title",
+				"description": "Title of the book",
+				"examples": [
+					"On the origin of species by means of natural selection : or, The preservation of favoured races in the struggle for life"
+				]
+			},
+			"citation-pages": {
+				"type": "integer",
+				"title": "citation-pages",
+				"description": "First page and last page, separated by a comma; for single page citations, a single value may be used",
+				"examples": [
+					351,355
+				]
+			},
+			"city": {
+				"type": "string",
+				"title": "city",
+				"description": "City that the book was published in",
+				"examples": [
+					"London"
+				]
+			},
+			"edition": {
+				"type": "integer",
+				"title": "edition",
+				"description": "Edition of the book",
+				"examples": [
+					6
+				]
+			},
+			"publisher": {
+				"type": "string",
+				"title": "publisher",
+				"description": "Publisher of the book",
+				"examples": [
+					"John Murray"
+				]
+			},
+			"year": {
+				"type": "integer",
+				"title": "year",
+				"description": "Year of publication",
+				"examples": [
+					1859
+				]
+			}
+		}
+	}
+}

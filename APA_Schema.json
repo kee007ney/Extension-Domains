@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "array",
+	"title": "Journal Reference",
+	"description": "This represents the list of journal articles cited.",
+		"required": [
+			"APA_Schema_Book",
+			"APA_Schema_Journal"
+		],
+	"definitions": {
+		"style_id": {
+			"type": "string",
+			"description": "Declaration of APA style. For use in programmatic references."
+		}
+	}
+}
