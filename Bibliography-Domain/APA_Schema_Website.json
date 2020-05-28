@@ -1,0 +1,61 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Website Reference",
+  "description": "This represents the list of websites cited.",
+  "items": {
+    "required": [
+      "website-authors",
+      "webpage-title",
+      "website-title",
+      "website-year",
+      "website-month",
+      "website-day",
+      "website-URL"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "website-authors": {
+        "type": "string",
+        "title": "website-authors",
+        "description": "Authors of the website, in order of appearance, written as <first name><space><middle name><space><last name><comma>",
+        "examples": ["The HIVE Lab"]
+      },
+      "webpage-title": {
+        "type": "string",
+        "title": "webpage-title",
+        "description": "Title of the webpage",
+        "examples": ["BioCompute Objects"]
+      },
+      "website-title": {
+        "type": "string",
+        "title": "website-title",
+        "description": " Title of the website",
+        "examples": ["The BioCompute Draft Standard"]
+      },
+      "website-year": {
+        "type": "integer",
+        "title": "website-year",
+        "description": "Year the website was published",
+        "examples": [2004, 2018]
+      },
+      "website-month": {
+        "type": "string",
+        "title": "website-month",
+        "description": "Month the website was published",
+        "examples": ["August"]
+      },
+      "website-day": {
+        "type": "integer",
+        "title": "website-day",
+        "description": "Day the website was published",
+        "examples": ["12"]
+      },
+      "website-URL": {
+        "type": "string",
+        "title": "website-URL",
+        "description": "URL of the website",
+        "examples": ["https://biocomputeobject.org/specification.html"]
+      }
+    }
+  }
+}
