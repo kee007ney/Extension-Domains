@@ -1,0 +1,75 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Electronic Source Reference",
+  "description": "This is a citation of an electronic source, such as a YouTube video.",
+  "items": {
+    "required": [
+      "ES-authors",
+      "ES-title",
+      "ES-city",
+      "ES-state_province",
+      "ES-country_region",
+      "ES-year",
+      "ES-month",
+      "ES-day",
+      "ES-URL"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "ES-authors": {
+        "type": "string",
+        "title": "ES-authors",
+        "description": "Author(s) of the electronic source, in order of appearance, written as <first name><space><middle name><space><last name><comma>. In the case of a video, the channel/person that uploaded it.",
+        "examples": ["TopTikTok, @germanp5"]
+      },
+      "ES-title": {
+        "type": "string",
+        "title": "ES-title",
+        "description": "Title of the electronic source",
+        "examples": ["He just vibin'"]
+      },
+      "ES-city": {
+        "type": "string",
+        "title": "ES-city",
+        "description": "City the electronic source was created in",
+        "examples": ["Algoma"]
+      },
+      "ES-state_province": {
+        "type": "string",
+        "title": "ES-state_province",
+        "description": "State/province the electronic source was created in",
+        "examples": ["Wisconsin"]
+      },
+      "ES-country_region": {
+        "type": "string",
+        "title": "ES-country_region",
+        "description": "Country/region the electronic source was created in",
+        "examples": ["USA"]
+      },
+      "ES-year": {
+        "type": "integer",
+        "title": "ES-year",
+        "description": "Year the electronic source was published",
+        "examples": [2004, 2020]
+      },
+      "ES-month": {
+        "type": "string",
+        "title": "website-month",
+        "description": "Month the electronic source was published",
+        "examples": ["March"]
+      },
+      "ES-day": {
+        "type": "integer",
+        "title": "website-day",
+        "description": "Day the electronic source was published",
+        "examples": [26]
+      },
+      "ES-URL": {
+        "type": "string",
+        "title": "ES-URL",
+        "description": "URL of the electronic source",
+        "examples": ["https://www.youtube.com/watch?v=rMtf2h1AcNE"]
+      }
+    }
+  }
+}

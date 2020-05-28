@@ -1,0 +1,54 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Case Reference",
+  "description": "This is a citation of a court case.",
+  "items": {
+    "required": [
+      "case-title",
+      "case-number",
+      "case-court",
+      "case-year",
+      "case-month",
+      "case-day"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "case-title": {
+        "type": "string",
+        "title": "case-title",
+        "description": "Title of the court case",
+        "examples": ["Plessy v. Ferguson"]
+      },
+      "case-number": {
+        "type": "string",
+        "title": "case-number",
+        "description": "Case number of the court case",
+        "examples": ["CR00034368-00"]
+      },
+      "case-court": {
+        "type": "string",
+        "title": "case-court",
+        "description": "Court the case was presented in",
+        "examples": ["Loudoun Circuit Court"]
+      },
+      "case-year": {
+        "type": "integer",
+        "title": "case-year",
+        "description": "Year the case was presented in",
+        "examples": [1896, 2020]
+      },
+      "case-month": {
+        "type": "string",
+        "title": "case-month",
+        "description": "Month the case was presented in",
+        "examples": ["March"]
+      },
+      "case-day": {
+        "type": "integer",
+        "title": "case-day",
+        "description": "Day the case was presented in",
+        "examples": [12]
+      }
+    }
+  }
+}

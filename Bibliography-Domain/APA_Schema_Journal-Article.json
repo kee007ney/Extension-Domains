@@ -1,0 +1,55 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Journal Article Reference",
+  "description": "This is a citation for a journal article.",
+  "items": {
+    "required": [
+      "journal-article-author",
+      "journal-article-title",
+      "journal-article-journal_name",
+      "journal-article-year",
+      "journal-article-pages"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "journal-article-author": {
+        "type": "string",
+        "title": "journal-article-author",
+        "description": "Author(s) of the journal article, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": ["Daniel Kahneman"]
+      },
+      "journal-article-title": {
+        "type": "string",
+        "title": "journal-article-title",
+        "description": "Title of the journal article",
+        "examples": [
+          "A perspective on judgement and choice: Mapping bounded rationality."
+        ]
+      },
+      "journal-article-journal_name": {
+        "type": "string",
+        "title": "journal-article-journal_name",
+        "description": "The name of the journal the article was published in",
+        "examples": ["American Psychologist"]
+      },
+      "journal-article-year": {
+        "type": "integer",
+        "title": "journal-article-year",
+        "description": "Year the journal article was published",
+        "examples": [2003]
+      },
+      "journal-article-pages": {
+        "type": "string",
+        "title": "journal-article-pages",
+        "description": "Page range of the journal article in the journal it was published",
+        "examples": ["697-720"]
+      },
+      "journal-article-DOI": {
+        "type": "string",
+        "title": "journal-article-DOI",
+        "description": "Optional field for the DOI of the journal article",
+        "examples": ["10.1037/0003-066x.58.9.697"]
+      }
+    }
+  }
+}

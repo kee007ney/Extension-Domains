@@ -1,0 +1,63 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Website Reference",
+  "description": "This is a citation for a document from a website (web-doc).",
+  "items": {
+    "required": [
+      "web-doc-authors",
+      "webpage-title",
+      "website-title",
+      "web-doc-year",
+      "web-doc-month",
+      "web-doc-day",
+      "web-doc-URL"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "web-doc-authors": {
+        "type": "string",
+        "title": "web-doc-authors",
+        "description": "Authors of the document, in order of appearance, written as <first name><space><middle name><space><last name><comma>",
+        "examples": ["The HIVE Lab"]
+      },
+      "webpage-title": {
+        "type": "string",
+        "title": "webpage-title",
+        "description": "Title of the webpage",
+        "examples": ["The HIVE Lab"]
+      },
+      "website-title": {
+        "type": "string",
+        "title": "website-title",
+        "description": "Title of the website",
+        "examples": ["GutFeeling Knowledgebase"]
+      },
+      "web-doc-year": {
+        "type": "integer",
+        "title": "web-doc-year",
+        "description": "Year the document was published",
+        "examples": [2004, 2020]
+      },
+      "web-doc-month": {
+        "type": "string",
+        "title": "web-doc-month",
+        "description": "Month the document was published",
+        "examples": ["March"]
+      },
+      "web-doc-day": {
+        "type": "integer",
+        "title": "web-doc-day",
+        "description": "Day the document was published",
+        "examples": ["31"]
+      },
+      "web-doc-URL": {
+        "type": "string",
+        "title": "web-doc-URL",
+        "description": "URL of the document on the website",
+        "examples": [
+          "https://hive.biochemistry.gwu.edu/gfkb/GutFeelingKnowledgeBaseNotesV4"
+        ]
+      }
+    }
+  }
+}

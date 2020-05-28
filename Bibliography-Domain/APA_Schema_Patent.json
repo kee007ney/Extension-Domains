@@ -1,0 +1,40 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Patent Reference",
+  "description": "This is a citation for a patent.",
+  "items": {
+    "required": [
+      "patent-inventor",
+      "patent-year",
+      "patent-country_region",
+      "patent-number"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "patent-inventor": {
+        "type": "string",
+        "title": "patent-inventor",
+        "description": "Inventor of the patent",
+        "examples": "Medtronic, inc."
+      },
+      "patent-year": {
+        "type": "integer",
+        "title": "patent-year",
+        "description": "Year the patent was created",
+        "examples": [2004, 2015]
+      },
+      "patent-country_region": {
+        "type": "string",
+        "title": "patent-country_region",
+        "description": "Country/region the patent was created in",
+        "examples": "USA"
+      },
+      "patent-number": {
+        "type": "String",
+        "title": "patent-number",
+        "description": "The identifiable patent number",
+        "examples": ["00643169214828"]
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Interview Reference",
+  "description": "This is a citation of a interview.",
+  "items": {
+    "required": [
+      "interview-interviewee",
+      "interview-title",
+      "interview-interviewer",
+      "interview-year",
+      "interview-month",
+      "interview-day"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "interview-interviewee": {
+        "type": "string",
+        "title": "interview-interviewee",
+        "description": "The name(s) of the person being interviewed, in alphabetical order, written as <first name><space><middle name><last name><comma>",
+        "examples": ["Monica Lewinsky"]
+      },
+      "interview-title": {
+        "type": "string",
+        "title": "interview-title",
+        "description": "The title of the interview",
+        "examples": ["Interview with Monica Lewinsky"]
+      },
+      "interview-interviewer": {
+        "type": "string",
+        "title": "interview-interviewer",
+        "description": "The name of the person interviewing the guest(s)",
+        "examples": ["Barbara Walters"]
+      },
+      "interview-year": {
+        "type": "integer",
+        "title": "interview-year",
+        "description": "The year the interview was conducted",
+        "examples": [1999, 2020]
+      },
+      "interview-month": {
+        "type": "integer",
+        "title": "interview-month",
+        "description": "The month the interview was conducted",
+        "examples": ["March"]
+      },
+      "interview-day": {
+        "type": "integer",
+        "title": "interview-day",
+        "description": "The day the interview was conducted",
+        "examples": [3]
+      }
+    }
+  }
+}

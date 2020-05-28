@@ -1,0 +1,61 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Sound Recording Reference",
+  "description": "This represents the list of sound recording (SR) cited.",
+  "items": {
+    "required": [
+      "SR-composer",
+      "SR-performer",
+      "SR-title",
+      "SR-year",
+      "SR-city",
+      "SR-state_province",
+      "SR-country_region"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "SR-composer": {
+        "type": "string",
+        "title": "SR-composer",
+        "description": "Composer of the sound recording, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": ["Miles Davis"]
+      },
+      "SR-performer": {
+        "type": "string",
+        "title": "SR-performer",
+        "description": "Performer of the version of the sound recording",
+        "examples": ["Miles Davis"]
+      },
+      "SR-title": {
+        "type": "string",
+        "title": "SR-title",
+        "description": "Title of the sound recording",
+        "examples": ["Kind of Blue"]
+      },
+      "SR-year": {
+        "type": "integer",
+        "title": "SR-year",
+        "description": "Year the sound recording was recorded.",
+        "examples": [1959, 2020]
+      },
+      "SR-city": {
+        "type": "string",
+        "title": "SR-city",
+        "description": "City the sound recording was recorded in",
+        "examples": ["New York City"]
+      },
+      "SR-state_province": {
+        "type": "string",
+        "title": "SR-state_province",
+        "description": "The state or province the sound recording piece was created in",
+        "examples": ["New York"]
+      },
+      "SR-country_region": {
+        "type": "string",
+        "title": "SR-country_region",
+        "description": "The country or region the sound recording piece was created in",
+        "examples": ["USA"]
+      }
+    }
+  }
+}

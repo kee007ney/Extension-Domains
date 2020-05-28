@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Miscellaneous Reference",
+  "description": "This is a miscellaneous citation that is not captured within the typical categories (Art, Film, Book, Journal, etc.). An example is an email conversation.",
+  "items": {
+    "required": [
+      "miscellaneous-authors",
+      "miscellaneous-title",
+      "miscellaneous-publication_title",
+      "miscellaneous-year",
+      "miscellaneous-month",
+      "miscellaneous-day",
+      "miscellaneous-city",
+      "miscellaneous-state_province",
+      "miscellaneous-country_region",
+      "miscellaneous-publisher"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "miscellaneous-authors": {
+        "type": "string",
+        "title": "miscellaneous-authors",
+        "description": "Authors of the miscellaneous source, in order of appearance, written as <first name><space><middle name(s)><space><last name><comma>",
+        "examples": ["James D Kramer, Jacky Chen"]
+      },
+      "miscellaneous-title": {
+        "type": "string",
+        "title": "miscellaneous-title",
+        "description": "Title of the miscellaneous source",
+        "examples": ["How to write bibliographies"]
+      },
+      "miscellaneous-publication_title": {
+        "type": "string",
+        "title": "miscellaneous-publication_title",
+        "description": "Title of the publication that published the miscellaneous source",
+        "examples": ["The Bibliography Publication"]
+      },
+      "miscellaneous-year": {
+        "type": "integer",
+        "title": "miscellaneous-year",
+        "description": "Year the miscellaneous source was published",
+        "examples": [2006, 2010]
+      },
+      "miscellaneous-month": {
+        "type": "string",
+        "title": "miscellaneous-month",
+        "description": "Month the miscellaneous source was published",
+        "examples": ["September"]
+      },
+      "miscellaneous-day": {
+        "type": "integer",
+        "title": "miscellaneous-day",
+        "description": "Day the miscellaneous source was published",
+        "examples": [2]
+      },
+      "miscellaneous-city": {
+        "type": "string",
+        "title": "miscellaneous-city",
+        "description": "City where the miscellaneous source was published",
+        "examples": ["Chicago"]
+      },
+      "miscellaneous-state_province": {
+        "type": "string",
+        "title": "miscellaneous-state_province",
+        "description": "State/province where the miscellaneous source was published",
+        "examples": ["Washington"]
+      },
+      "miscellaneous-country_region": {
+        "type": "string",
+        "title": "miscellaneous-country_region",
+        "description": "Country/region where the miscellaneous source was published",
+        "examples": ["USA"]
+      },
+      "miscellaneous-publisher": {
+        "type": "string",
+        "title": "miscellaneous-publisher",
+        "description": "Publisher of the miscellaneous source",
+        "examples": ["Adventure Works Press"]
+      }
+    }
+  }
+}

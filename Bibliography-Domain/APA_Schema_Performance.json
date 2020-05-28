@@ -1,0 +1,82 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Performance Reference",
+  "description": "This is a reference of a performance, such as a play.",
+  "items": {
+    "required": [
+      "performance-title",
+      "performance-writer",
+      "performance-performers",
+      "performance-theater",
+      "performance-city",
+      "performance-state_province",
+      "performance-country_region",
+      "performance-year",
+      "performance-month",
+      "performance-day"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "performance-title": {
+        "type": "string",
+        "title": "performance-title",
+        "description": "Title of the performance",
+        "examples": "Hamilton (Broadway)"
+      },
+      "performance-writer": {
+        "type": "string",
+        "title": "performance-writer",
+        "description": "Writer(s) of the performance, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": "Lin-Manuel Miranda"
+      },
+      "performance-performers": {
+        "type": "string",
+        "title": "performance-performers",
+        "description": "Performers/actor(s) in the performance, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": "Anthony Ramos, Christopher Jackson, Daveed Diggs, Jasmine Cephas Jones, Jonathan Groff, Leslie Odom Jr., Lin-Manuel Miranda, Okieriete Onaodowan, Phillipa Soo, Renee Elise Goldsberry"
+      },
+      "performance-theater": {
+        "type": "string",
+        "title": "performance-theater",
+        "description": "Theater where the performance occured",
+        "examples": ["The Public Theatre"]
+      },
+      "performance-city": {
+        "type": "string",
+        "title": "performance-city",
+        "description": "City where the peformance occured",
+        "examples": ["New York City"]
+      },
+      "performance-state_province": {
+        "type": "string",
+        "title": "performance-state_province",
+        "description": "State/province in which the performance occured",
+        "examples": ["New York"]
+      },
+      "performance-country_region": {
+        "type": "string",
+        "title": "performance-country_region",
+        "description": "Country/region the performance occured",
+        "examples": ["USA"]
+      },
+      "performance-year": {
+        "type": "integer",
+        "title": "performance-year",
+        "description": "Year the performance occured",
+        "examples": [2015, 2020]
+      },
+      "performance-month": {
+        "type": "integer",
+        "title": "performance-month",
+        "description": "Month the performance occured",
+        "examples": "January"
+      },
+      "performance-day": {
+        "type": "integer",
+        "title": "performance-day",
+        "description": "Day the performance occured",
+        "examples": [20]
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Journal Article Reference",
+  "description": "This is a citation for an article in a periodical (PA).",
+  "items": {
+    "required": [
+      "PA-author",
+      "PA-title",
+      "PA-periodical_title",
+      "PA-year",
+      "PA-month",
+      "PA-day",
+      "PA-pages"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "PA-author": {
+        "type": "string",
+        "title": "PA-author",
+        "description": "Author(s) of the article, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": ["Craig Lee"]
+      },
+      "PA-title": {
+        "type": "string",
+        "title": "PA-title",
+        "description": "Title of the periodical article",
+        "examples": ["12 Restaurants America Loves. With Recipes!"]
+      },
+      "PA-periodical_title": {
+        "type": "string",
+        "title": "PA-periodical_title",
+        "description": "The name of the periodical the article was published in",
+        "examples": ["The New York Times"]
+      },
+      "PA-year": {
+        "type": "integer",
+        "title": "PA-year",
+        "description": "Year the article was published",
+        "examples": [2020]
+      },
+      "PA-month": {
+        "type": "string",
+        "title": "PA-month",
+        "description": "Month the article was published",
+        "examples": ["May"]
+      },
+      "PA-day": {
+        "type": "integer",
+        "title": "PA-day",
+        "description": "Day the article was published",
+        "examples": [26]
+      },
+      "PA-pages": {
+        "type": "string",
+        "title": "PA-pages",
+        "description": "Page range of the article in the periodical it was published",
+        "examples": ["2-4"]
+      },
+      "PA-DOI": {
+        "type": "string",
+        "title": "PA-DOI",
+        "description": "Optional field for the DOI of the article in the periodical, if available",
+        "examples": ["10.1037/0003-066x.58.9.697"]
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "type": "Conference Proceedings Reference",
+  "description": "This is a citation for a record of conference proceedings (CP).",
+  "items": {
+    "required": [
+      "CP-author",
+      "CP-title",
+      "CP-pages",
+      "CP-year",
+      "CP-publication_name",
+      "CP-city",
+      "CP-publisher"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "CP-author": {
+        "type": "string",
+        "title": "CP-author",
+        "description": "Author(s) of the conference, in alphabetical order, written as <first name><space><middle name><space><last name><comma>",
+        "examples": [
+          "Annalisa Angelini, Gerald Berry, Margaret Burke, Maria G. Crespo-Leiro, Lawrence Czer, Stephan M. Ensminger, Nicola Hiemann, Abdallah G. Kfoury, Jon Kobashigawa, Donna Mancini, Paul Mohacsi, Jignesh Patel, Naveen Pereira, Jeffrey L.Platt, Elaine F. Reed, Hermann Reichenspurner, Nancy Reinsmoen, E. Rene Rodriguez, Marlene L.Rose, Stuart D.Russell, Randy Starling, Nicole Suciu-Foca, Jose Tallaj, David O.Taylor, Adrian Van Bakel, Lori West, Adriana Zeevi, Andreas Zuckermann, Consensus Conference Participants"
+        ]
+      },
+      "CP-title": {
+        "type": "string",
+        "title": "CP-title",
+        "description": "Title of the conference",
+        "examples": [
+          "Report from a consensus conference on antibody-mediated rejection in heart transplantation"
+        ]
+      },
+      "CP-pages": {
+        "type": "string",
+        "title": "CP-pages",
+        "description": "Page range of the published conference proceedings",
+        "examples": ["252-269"]
+      },
+      "CP-year": {
+        "type": "integer",
+        "title": "CP-year",
+        "description": "Year the conference proceedings report was published",
+        "examples": [2011]
+      },
+      "CP-publication_name": {
+        "type": "string",
+        "title": "CP-publication_name",
+        "description": "Name of the conference publication",
+        "examples": ["The Journal of Heart and Lung Transplant"]
+      },
+      "CP-city": {
+        "type": "string",
+        "title": "CP-city",
+        "description": "The city the publisher is located in",
+        "examples": ["New York City"]
+      },
+      "CP-publisher": {
+        "type": "string",
+        "title": "CP-publisher",
+        "description": "Name of the publisher of the journal/other that the conference proceedings were published in",
+        "examples": ["Elsevier"]
+      },
+      "CP-DOI": {
+        "type": "string",
+        "title": "CP-DOI",
+        "description": "Optional field for the DOI of the report of the conference proceedings, if available",
+        "examples": ["https://doi.org/10.1016/j.healun.2010.11.003"]
+      }
+    }
+  }
+}
