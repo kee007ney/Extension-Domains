@@ -1,28 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "array",
-  "title": "Journal Reference",
+  "type": "object",
+  "title": "Base type for all references",
   "description": "This represents the list of APA citation schemas.",
   "required": [
-    "APA_Schema_Art",
-    "APA_Schema_Book",
-    "APA_Schema_Book-Section",
-    "APA_Schema_Case",
-    "APA_Schema_Conference-Proceedings",
-    "APA_Schema_Elecctronic-Source",
-    "APA_Schema_Film",
-    "APA_Schema_Interview",
-    "APA_Schema_Journal-Article",
-    "APA_Schema_Micessaneous",
-    "APA_Schema_Patent",
-    "APA_Schema_Performance",
-    "APA_Schema_Periodical_Article",
-    "APA_Schema_Report",
-    "APA_Schema_Sound Recording",
-    "APA_Schema_Website-Document",
-    "APA_Schema_Website"
+    "Reference_ID",
   ],
   "definitions": {
+    "Reference_ID": {
+      "type": "string",
+      "description": "A unique identifier applied to each reference for identification. Can be a stringified integer (1, 2, 3...) or a 
     "style_id": {
       "type": "string",
       "description": "Declaration of APA style. For use in programmatic references."
