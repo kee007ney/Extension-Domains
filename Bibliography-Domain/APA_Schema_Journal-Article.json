@@ -4,6 +4,7 @@
   "description": "This is a citation for a journal article.",
   "items": {
     "required": [
+      "$id",
       "journal-article-author",
       "journal-article-title",
       "journal-article-journal_name",
@@ -12,6 +13,11 @@
     ],
     "additionalProperties": false,
     "properties": {
+      "$id": {
+        "type": "string",
+        "description": "Unique identifier to reference citation.",
+        "examples": ["Kahneman et al."]
+      },
       "journal-article-author": {
         "type": "string",
         "title": "journal-article-author",
